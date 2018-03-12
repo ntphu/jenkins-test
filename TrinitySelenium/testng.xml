@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Scenario 1" thread-count="2">
+	<parameter name="browser" value="chrome" />
+	<!-- <test name="Trinity Login">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.blueship.test.TrinityLoginTest" />
+		</classes>
+	</test> -->
+	<listeners>
+         <listener class-name="com.blueship.report.SuiteHTMLReporter" />
+    </listeners>
+    
+	<test name="Scenario 1">
+		
+		<classes>
+			<!-- <class name="com.blueship.test.LoginTest" /> -->
+			<class name="com.blueship.test.CreateNewLotTest" />
+			<class name="com.blueship.test.CreateChangePropertyTest" />
+			<class name="com.blueship.test.CreateCheckoutCheckinRequestTest" />
+		</classes>
+	</test>
+
+</suite>
